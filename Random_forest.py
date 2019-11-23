@@ -203,7 +203,7 @@ for i in range(0, len(dataset[0])-1):
 str_column_to_int(dataset, len(dataset[0])-1)
 # evaluate algorithm
 n_folds = 5
-max_depth = 20
+max_depth = 50
 min_size = 1
 sample_size = 1.0
 n_features = int(sqrt(len(dataset[0])-1))

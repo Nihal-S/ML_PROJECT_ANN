@@ -166,8 +166,8 @@ for i in range(len(dataset[0])):
 	str_column_to_float(dataset, i)
 # evaluate algorithm
 n_folds = 5
-max_depth = 5
-min_size = 10
+max_depth = 25
+min_size = 30
 scores = evaluate_algorithm(dataset, decision_tree, n_folds, max_depth, min_size)
 print('Scores: %s' % scores)
 print('Mean Accuracy: %.3f%%' % (sum(scores)/float(len(scores))))
